@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Опитування - Паперовий будинок</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>Опитування</h1>
+        <nav class="menu">
+            <a href="index.html">Головна</a>
+            <a href="episodes.html">Епізоди</a>
+            <a href="survey.html">Опитування</a>
+            <a href="register.html">Реєстрація</a>
+        </nav>
+    </header>
+
+    <main>
+        <form class="form">
+            <label>Ваше ім’я:<br>
+                <input type="text" name="name" required>
+            </label><br><br>
+
+            <label>Ваша улюблена серія:<br>
+                <input type="text" name="episode">
+            </label><br><br>
+
+            <label>Чи подобається вам серіал?<br>
+                <select name="like">
+                    <option>Так</option>
+                    <option>Ні</option>
+                </select>
+            </label><br><br>
+
+            <label>Ваш коментар:<br>
+                <textarea name="comment" rows="5" cols="40"></textarea>
+            </label><br><br>
+
+            <input type="submit" value="Відправити">
+        </form>
+    </main>
+</body>
+
+</html>

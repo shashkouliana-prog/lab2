@@ -1,0 +1,146 @@
+/* --- Загальні стилі --- */
+body {
+  margin: 25px;
+  padding: 0;
+  background: url(sky.jpg);
+  background-size: cover;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* --- Header --- */
+header {
+  padding: 20px;
+  background: linear-gradient(grey, white, grey);
+}
+
+header h1 {
+  font-size: 2rem;
+  text-align: center;
+  text-shadow: grey 2px 2px;
+}
+
+/* --- Навігація --- */
+nav {
+  margin: 0;
+  border-bottom: #adb1b2 solid 1px;
+  padding: 25px 5px;
+  background: #e4e6e5;
+  text-align: center;
+}
+
+nav a {
+  padding: 0px 32px;
+  border-right: #868B8F dotted 2px;
+  font-size: 18px;
+  color: #044368;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: rgb(115, 103, 124);
+}
+
+nav a:last-child {
+  border-right: none;
+}
+
+/* --- Бокове меню --- */
+aside .side-menu {
+  float: right;
+  max-width: 25%;
+  min-width: 200px;
+  background-color: #e4e6e5;
+  border: 1px solid steelblue;
+  border-radius: 5px;
+  margin: 80px 0 0 20px;
+  padding: 0;
+}
+
+.side-menu li {
+  margin: 7px 0;
+  list-style: none;
+  padding-left: 15px;
+}
+
+#menu-header {
+  font-weight: bold;
+  font-size: 1.3rem;
+  text-decoration: underline;
+  color: black;
+}
+
+.side-menu li a {
+  text-decoration: none;
+  color: steelblue;
+  padding: 2px;
+}
+
+.side-menu li a:hover {
+  color: turquoise;
+  font-weight: bold;
+}
+
+/* --- Основний контент --- */
+.main-content {
+  float: left;
+  max-width: 70%;
+}
+
+.main-content h2 {
+  font-size: 1.8rem;
+  text-decoration: underline;
+  text-align: center;
+  text-shadow: grey 2px 2px;
+}
+
+.main-content p {
+  border: 1px solid #999;
+  border-radius: 5px;
+  padding: 6px;
+  margin-right: 20px;
+  color: #000;
+}
+
+/* --- Атрибути id-data --- */
+.main-content p[id-data="1"] {
+  background-color: #cdd4d6;
+}
+
+.main-content p[id-data="2"] {
+  background-color: #e6f4f8;
+}
+
+/* --- Псевдоелементи --- */
+.main-content p::first-line {
+  color: darkblue;
+}
+
+.main-content p::first-letter {
+  text-decoration: underline;
+  font-size: 1.6rem;
+}
+
+/* --- Зображення в параграфах --- */
+.main-content p img {
+  float: left;
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  transition: all 3s;
+}
+
+.main-content p img:hover {
+  transform: scale(2);
+}
+
+/* --- Footer --- */
+#footer {
+  clear: both;
+  text-align: center;
+  height: 100px;
+  background: gray;
+  vertical-align: middle;
+  line-height: 100px;
+  color: white;
+}
